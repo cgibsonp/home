@@ -17,7 +17,8 @@ import porfolioImage2 from '../images/portfolio/flyertap.png';
 import porfolioImage3 from '../images/portfolio/easycryptotaxes.png';
 import porfolioImage4 from '../images/portfolio/polibase.png';
 import profilepic from '../images/profilepic.jpg';
-import PDF from `../public/Resume.pdf`;
+
+const PDF = `../public/Resume.pdf`;
 
 import {
   About,
@@ -57,6 +58,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
+
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Chris Gibson.`,
