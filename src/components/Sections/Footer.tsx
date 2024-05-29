@@ -21,7 +21,7 @@ const Footer: FC = memo(() => (
       </div>
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://reactresume.com">
+        href="">
         <span>
           <span className="text-white">React</span>
           <span className="italic text-yellow"></span>

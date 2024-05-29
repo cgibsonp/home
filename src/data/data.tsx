@@ -11,15 +11,12 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import heroImage from '../images/websitebackground.jpg';
+import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/earshot.png';
-import porfolioImage2 from '../images/portfolio/flyertap.png';
 import porfolioImage3 from '../images/portfolio/easycryptotaxes.png';
+import porfolioImage2 from '../images/portfolio/flyertap.png';
 import porfolioImage4 from '../images/portfolio/polibase.png';
 import profilepic from '../images/profilepic.jpg';
-
-const PDF = `../public/Resume.pdf`;
-
 import {
   About,
   ContactSection,
@@ -32,12 +29,13 @@ import {
   TimelineItem,
 } from './dataDef';
 
+
 /**
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Chris Gibson Resume',
-  description: "Resume & Portfolio",
+  description: 'Resume & Portfolio',
 };
 
 /**
@@ -58,6 +56,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
+const PDF = `public/Resume.pdf`;
 
 export const heroData: Hero = {
   imageSrc: heroImage,
@@ -65,12 +64,13 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Nashville based <strong className="text-stone-100">Technology Consultant</strong>, currently working
-        at <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients modernized leveraging machine learning capabilities.
+        I'm a Nashville based <strong className="text-stone-100">Technology Consultant</strong>, currently working at{' '}
+        <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients modernized leveraging machine
+        learning capabilities.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me playing <strong className="text-stone-100">golf</strong>,
-        listening to <strong className="text-stone-100">live music</strong>, or on a {' '}
+        In my free time time, you can catch me playing <strong className="text-stone-100">golf</strong>, listening to{' '}
+        <strong className="text-stone-100">live music</strong>, or on a{' '}
         <strong className="text-stone-100">billiards</strong> table.
       </p>
     </>
@@ -97,7 +97,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Experienced in leading and innovating enterprise information technology functions. Thrives when collaborating with talented, diverse teams of designers and engineers to solve complex problems while having fun making something great together.
 
-  Interested in no-code development, artificial intelligence tools, and bringing digital technology ideas to life.`,
+  \NInterested in no-code development, artificial intelligence tools, and bringing digital technology ideas to life.`,
   aboutItems: [
     {label: 'Location', text: 'Nashville, TN', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -123,8 +123,8 @@ export const skills: SkillGroup[] = [
         name: 'Make (Integromat)',
         level: 7,
       },
-            {
-        name: 'Amazon Web Services.js',
+      {
+        name: 'Amazon Web Services',
         level: 3,
       },
       {
@@ -140,25 +140,25 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Earshot',
-    description: 'Give a short description of your project here.',
-    url: 'https://www.earshotlivemusic.com',
+    description: 'Hear what`s near - a platform that transforms how you explore, support, and enjoy your community.',
+    url: `https://www.earshotlivemusic.com`,
     image: porfolioImage1,
   },
   {
     title: 'Polibase',
-    description: 'Give a short description of your project here.',
+    description: 'Political Analytics made simple.',
     url: '',
     image: porfolioImage4,
   },
   {
     title: 'Flyertap',
-    description: '',
+    description: 'Event platform for college campuses.',
     url: 'https://www.instagram.com/flyertap/',
     image: porfolioImage2,
   },
   {
     title: 'EasyCryptoTaxes',
-    description: 'Give a short description of your project here.',
+    description: 'Crypto Taxes made easy.',
     url: 'https://www.easycryptotaxes.com',
     image: porfolioImage3,
   },
@@ -170,38 +170,60 @@ export const portfolioItems: PortfolioItem[] = [
 export const education: TimelineItem[] = [
   {
     date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    location: 'The Citadel',
+    title: 'Bachelor of Science, Business Administration',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2024 - Present',
+    location: 'Booz Allen Hamilton',
+    title: 'Release Train Engineer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Leading DevOps teams to deliver client use cases related to cloud computing & machine learning capabilities.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'January 2022 - January 2024',
+    location: 'Booz Allen Hamilton',
+    title: 'Technical Product Owner',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Supported priotization of the roadmap & backlog of DevOps teams to deliver client use cases related to cloud computing infrastructure & tooling.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2020 - January 2022',
+    location: 'Booz Allen Hamilton',
+    title: 'Scrum Master',
+    content: (
+      <p>
+        Ensured development team alignment to Agile fundamentals to best deliver client use cases related to cloud computing infrastructure & tooling.
+      </p>
+    ),
+  },
+  {
+    date: 'December 2018 - June 2020',
+    location: 'Ally Financial',
+    title: 'Scrum Master',
+    content: (
+      <p>
+        Ensured development team alignment to Agile fundamentals to best deliver digital enhancements to homepage of storefront website.
+      </p>
+    ),
+  },
+  {
+    date: 'June 2017 - December 2018',
+    location: 'Ally Financial',
+    title: 'Information Security Analyst',
+    content: (
+      <p>
+        Facilitated Identify and Access Management internal access reviews for critical applications.
       </p>
     ),
   },
@@ -237,27 +259,27 @@ export const experience: TimelineItem[] = [
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'We should connect, reach out!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'cgibsonp@gmail.com',
+      href: 'mailto:cgibsonp@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Nashville, TN, USA',
+      href: 'https://www.google.ca/maps/place/Nashville,+TN/@36.1868042,-86.9503931,11z/data=!3m1!4b1!4m6!3m5!1s0x8864ec3213eb903d:0x7d3fb9d0a1e9daa0!8m2!3d36.1626638!4d-86.7816016!16zL20vMDVqYm4?entry=ttu',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@chrisgibsons',
+      href: 'https://www.instagram.com/chrisgibsons/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'cgibsonp',
+      href: 'https://github.com/cgibsonp',
     },
   ],
 };
@@ -266,7 +288,7 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/cgibsonp'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/cgibsonp/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/chrisgibsons/'},
 ];
