@@ -56,7 +56,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-const PDF = `public/Resume.pdf`;
+const PDF = `/Resume.pdf`;
 
 export const heroData: Hero = {
   imageSrc: heroImage,
@@ -97,7 +97,7 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Experienced in leading and innovating enterprise information technology functions. Thrives when collaborating with talented, diverse teams of designers and engineers to solve complex problems while having fun making something great together.
 
-  \NInterested in no-code development, artificial intelligence tools, and bringing digital technology ideas to life.`,
+  \nInterested in no-code development, artificial intelligence tools, and bringing digital technology ideas to life.`,
   aboutItems: [
     {label: 'Location', text: 'Nashville, TN', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
