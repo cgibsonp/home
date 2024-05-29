@@ -169,7 +169,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
+    date: 'May 2017',
     location: 'The Citadel',
     title: 'Bachelor of Science, Business Administration',
     content: <p></p>,
