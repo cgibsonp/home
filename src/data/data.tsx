@@ -65,7 +65,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Nashville based <strong className="text-stone-100">Technology Enthusiast</strong>, currently working at{' '}
-        <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients modernized leveraging machine
+        <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients modernize by leveraging machine
         learning capabilities.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
