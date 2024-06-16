@@ -16,7 +16,7 @@ This is a React based personal resume website template. Built with typescript on
 
 ### 2. Updated data, included images, and fixed resume new window open
 
-### 3. Created account with Vercel and deployed after buying domain on GoDaddy
+### 3. Created account with Vercel for hosting
 
 ## Project Maintained By
 
