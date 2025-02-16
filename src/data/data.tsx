@@ -258,8 +258,7 @@ export const experience: TimelineItem[] = [
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'We should connect, reach out!',
+  headerText: 'We should connect, reach out!',
   items: [
     {
       type: ContactType.Email,

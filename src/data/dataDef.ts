@@ -111,8 +111,7 @@ export interface Testimonial {
  * Contact section
  */
 export interface ContactSection {
-  headerText?: string;
-  description: string;
+  headerText: string;
   items: ContactItem[];
 }
 

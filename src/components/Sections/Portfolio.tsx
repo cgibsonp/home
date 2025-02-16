@@ -13,7 +13,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Check out some of my work</h2>
+        <h2 className="self-center text-2xl font-bold text-white">Check out some of my work</h2>
         <div className=" w-full lg:columns-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -23,7 +23,15 @@ const Portfolio: FC = memo(() => {
                   className={classNames(
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
-                  <Image alt={title} className="h-full w-full" placeholder="blur" src={image} />
+                  <Image
+                    alt={title}
+                    className="h-full w-full"
+                    placeholder="blur"
+                    src={image}
+                    onError={(e) => {
+                      e.currentTarget.src = '/path/to/placeholder/image.jpg'; // Fallback image
+                    }}
+                  />
                   <ItemOverlay item={item} />
                 </div>
               </div>
