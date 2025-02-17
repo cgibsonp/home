@@ -39,7 +39,7 @@ const Portfolio: FC = memo(() => {
             );
           })}
         </div>
-        <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/MondayNightGroup`}>
+        <Link href={`https://www.cgibsonp.com/MondayNightGroup`}>
           Go to Monday Night Group
         </Link>
       </div>

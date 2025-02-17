@@ -169,7 +169,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Monday Night Group',
     description: 'Mens Bible Study App',
-    url: 'http://localhost:3000/MondayNightGroup',
+    url: 'https://www.cgibsonp.com/MondayNightGroup',
     image: porfolioImage5,
   },
 ];
