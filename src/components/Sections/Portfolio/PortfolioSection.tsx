@@ -6,7 +6,7 @@ const PortfolioSection: React.FC = () => {
       <h2>Portfolio</h2>
       <ul>
         <li>
-          <Link href="/mondaynightgroup">Monday Night Group</Link>
+          <Link href="/MondayNightGroup">Monday Night Group</Link>
         </li>
         {/* Other portfolio items */}
       </ul>
