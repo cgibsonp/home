@@ -16,6 +16,7 @@ import porfolioImage1 from '../images/portfolio/earshot.png';
 import porfolioImage3 from '../images/portfolio/easycryptotaxes.png';
 import porfolioImage2 from '../images/portfolio/flyertap.png';
 import porfolioImage4 from '../images/portfolio/polibase.png';
+import porfolioImage5 from '../images/portfolio/portfolioImage5.jpg';
 import profilepic from '../images/profilepic.jpg';
 import {
   About,
@@ -65,8 +66,7 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I'm a Nashville based <strong className="text-stone-100">Technology Enthusiast</strong>, currently working at{' '}
-        <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients modernized leveraging machine
-        learning capabilities.
+        <strong className="text-stone-100">Booz Allen Hamilton</strong> helping clients leverage artificial intelligence capabilities.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing <strong className="text-stone-100">golf</strong>, listening to{' '}
@@ -116,7 +116,7 @@ export const skills: SkillGroup[] = [
     name: 'Technology',
     skills: [
       {
-        name: 'No-Code (GlideApps)',
+        name: 'No-Code Web Development',
         level: 9,
       },
       {
@@ -125,11 +125,15 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Amazon Web Services',
+        level: 4,
+      },
+      {
+        name: 'Web Development',
         level: 3,
       },
       {
-        name: 'React.js',
-        level: 1,
+        name: 'iOS App Development',
+        level: 3,
       },
     ],
   },
@@ -161,6 +165,12 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Crypto Taxes made easy.',
     url: 'https://www.easycryptotaxes.com',
     image: porfolioImage3,
+  },
+  {
+    title: 'Monday Night Group',
+    description: 'Mens Bible Study App',
+    url: 'http://localhost:3000/MondayNightGroup',
+    image: porfolioImage5,
   },
 ];
 

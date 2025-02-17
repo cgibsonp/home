@@ -1,9 +1,8 @@
 {
   "pages/index.tsx -> ../components/Sections/Header": {
-    "id": 2938,
+    "id": "pages/index.tsx -> ../components/Sections/Header",
     "files": [
-      "static/chunks/770.7ccca14cecf2c1f4.js",
-      "static/chunks/938.dbc6e92703c3fe1c.js"
+      "static/chunks/src_components_Sections_Header_tsx-src_hooks_useNavObserver_tsx.js"
     ]
   }
 }
