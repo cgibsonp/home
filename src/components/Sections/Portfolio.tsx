@@ -2,6 +2,7 @@ import {ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
 import {FC, memo, MouseEvent, useCallback, useEffect, useRef, useState} from 'react';
+import Link from 'next/link';
 
 import {isMobile} from '../../config';
 import {portfolioItems, SectionId} from '../../data/data';
@@ -38,6 +39,9 @@ const Portfolio: FC = memo(() => {
             );
           })}
         </div>
+        <Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/MondayNightGroup`}>
+          Go to Monday Night Group
+        </Link>
       </div>
     </Section>
   );
