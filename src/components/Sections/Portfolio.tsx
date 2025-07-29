@@ -147,7 +147,8 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
                 <motion.div
                   animate={{ x: [0, 4, 0] }}
                   transition={{ duration: 1, repeat: Infinity }}
-                </div>
+                >
+                </motion.div>
                 <ArrowTopRightOnSquareIcon className="h-4 w-4" />
               </div>
             )}
@@ -157,3 +158,5 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
     </motion.a>
   );
 });
+
+ItemOverlay.displayName = 'ItemOverlay';
