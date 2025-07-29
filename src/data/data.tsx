@@ -145,7 +145,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Earshot',
     description: 'Hear what`s near - a platform that transforms how you explore, support, and enjoy your community.',
-    url: `https://www.earshotlivemusic.com`,
+    url: `https://www.earshotevents.com`,
     image: porfolioImage1,
   },
   {
