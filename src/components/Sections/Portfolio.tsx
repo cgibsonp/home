@@ -153,6 +153,7 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
               </div>
             )}
           </motion.div>
+          </motion.div>
         </div>
       </div>
     </motion.a>
