@@ -116,3 +116,4 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       </div>
     </a>
   );
+});
