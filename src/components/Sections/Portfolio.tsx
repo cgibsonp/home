@@ -213,7 +213,9 @@ const ProjectModal: FC<{project: PortfolioItem; onClose: () => void}> = memo(({p
             style={{ height: 'calc(90vh - 80px)' }}
             onLoad={handleIframeLoad}
             title={`Preview of ${project.title}`}
-            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+            sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox allow-top-navigation"
+            referrerPolicy="no-referrer-when-downgrade"
+            loading="eager"
           />
         </div>
       </div>
